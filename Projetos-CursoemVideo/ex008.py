@@ -1,7 +1,5 @@
-# Programa que converte metros em centímetros e milímetros
+# Programa que converte metros em medidas       
 
-print('Conversor de metros em centímetros e milímetros\n')
-
+print('Conversor de metros\n')
 medida = float(input('Insira uma medida em metros: '))
-
-print('Medidas correspondentes =>\nCentímetros: {}\nMilímetros: {}'.format(medida*100, medida*1000))
+print('Essa medida correponde a\nQuilômetros: {:.2f}\nHectômetros: {:.2f}\nDecâmetros: {:.2f}\nDecímetros: {:.2f}\nCentímetros: {:.2f}\nMilímetros: {:.2f}'.format(medida/1000, medida/100, medida/10, medida*10, medida*100, medida*1000))
